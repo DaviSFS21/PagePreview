@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #3600ff;
+      --dark-crimson: #9b1b30;
+      --very-dark-grey: #1a1a1a;
+      --off-white: #f8f8f8;
+      --font-family: 'Roboto', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--off-white);
+      color: var(--very-dark-grey);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    #about {
+      background-color: var(--off-white);
+    }
+
+    #portfolio {
+      background-color: var(--dark-crimson);
+      color: white;
+    }
+
+    #contact {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      background-color: var(--very-dark-grey);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Welcome to My Portfolio</h1>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm a passionate web developer with a love for creating beautiful and functional websites.</p>
+</section>
+
+<section id="portfolio">
+  <h2>My Work</h2>
+  <p>Here are some of my projects:</p>
+  <div class="project-grid">
+    <div class="project" style="background-color: #ffcc00; padding: 20px; margin: 10px; border-radius: 10px;">Project 1</div>
+    <div class="project" style="background-color: #00ccff; padding: 20px; margin: 10px; border-radius: 10px;">Project 2</div>
+    <div class="project" style="background-color: #ff6699; padding: 20px; margin: 10px; border-radius: 10px;">Project 3</div>
+    <div class="project" style="background-color: #66ff66; padding: 20px; margin: 10px; border-radius: 10px;">Project 4</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out!</p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com" target="_blank" class="iconify" data-icon="akar-icons:linkedin-fill"></a>
+    <a href="https://www.instagram.com" target="_blank" class="iconify" data-icon="akar-icons:instagram-fill"></a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2023 My Portfolio</p>
+</footer>
+
+</body>
+
+</html>
